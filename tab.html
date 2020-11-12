@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box;}
+        .event-content .tab {width:100%; list-style:none; margin:0;}
+        .event-content .tab::after {content:''; display:block; clear:both;}
+        .event-content .tab li {float:left; width:20%; border:1px solid #000;}
+        .event-content .tab li button {display:block; width:100%;}
+        .event-content .tab-content {display:none;}
+        .event-content .tab-content-first {display:block;}
+    </style>
+</head>
+<body>
+    <section class="event-content">
+        <ul class="tab">
+            <li class="tab-list tab-active" data-num="0"><button type="button">TAB LIST 1</button></li>
+            <li class="tab-list" data-num="1"><button type="button">TAB LIST 2</button></li>
+            <li class="tab-list" data-num="2"><button type="button">TAB LIST 3</button></li>
+            <li class="tab-list" data-num="3"><button type="button">TAB LIST 4</button></li>
+            <li class="tab-list" data-num="4"><button type="button">TAB LIST 5</button></li>
+        </ul>
+        <article class="tab-content tab-content-first">
+            <h1>Tab content 1</h1>
+        </article>
+        <article class="tab-content">
+            <h1>Tab content 2</h1>
+        </article>
+        <article class="tab-content">
+            <h1>Tab content 3</h1>
+        </article>
+        <article class="tab-content">
+            <h1>Tab content 4</h1>
+        </article>
+        <article class="tab-content">
+            <h1>Tab content 5</h1>
+        </article>
+    </section>
+    <script src="./js/tab.js"></script>
+</body>
+</html>
